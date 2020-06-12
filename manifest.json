@@ -1,0 +1,25 @@
+{
+    "name": "Text Reader",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Reads highlighted text.",
+    "icons": {
+        "128": "images/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "jquery-3.5.1.js", 
+                "popup.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"]
+}
