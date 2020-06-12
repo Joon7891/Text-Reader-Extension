@@ -3,12 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Text Reader</title>
 
     <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="jquery-3.5.1.js"></script>
 </head>
 <body>
     <div class="modal-header">
@@ -17,7 +19,17 @@
         </h1>
     </div>
 
-    <button id="speech-button" type="button" class="btn btn-dark">Click to Read Selected Text</button>
+    <div class="inputs">
+        <div class="d-flex justify-content-center my-4">
+            <div class="w-75">
+              <input type="range" class="custom-range" id="speed" min="0" max="200">
+            </div>
+            <span class="font-weight-bold text-primary ml-2 valueSpan"></span>
+        </div>
+    
+        <button id="speech-button" type="button" class="btn btn-primary btn-lg btn-block">Click to Read Selected Text</button>
+    </div>
+
     <script src="popup.js"></script>
 </body>
 </html>
