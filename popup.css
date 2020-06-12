@@ -7,6 +7,13 @@ html, body {
     width: 250px;
 }
 
+.modal-header {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    border: 1px solid #dadada;
+}
+
 h1 {
     font-family: 'Menlo', monospace;
     font-size: 28px;
@@ -15,25 +22,10 @@ h1 {
     color: #2f5876;
 }
 
-img {
-    width: 48px;
-}
-
-.modal-header {
-    align-items: center;
-    border: 0.5px solid #dadada;
-    font-weight: 1000;
-    text-align: center;
-    padding: 10px;
-    height: 60px;
-}
-
 #input-fields {
     align-items: center;
 }
 
-.scrollable-menu {
-    height: auto;
-    max-height: 200px;
-    overflow-x: hidden;
+#speech-button {
+    border-radius: 0px;
 }
